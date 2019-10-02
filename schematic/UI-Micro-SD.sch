@@ -1,8 +1,5 @@
 EESchema Schematic File Version 4
-LIBS:DizzyBit-MicroSD-cache
-LIBS:2-relay-over-io-cache
-LIBS:_DizzyBit-1.77LCD-cache
-LIBS:StandOut-2.0LCD-Keypad-cache
+LIBS:UI-Micro-SD-cache
 EELAYER 26 0
 EELAYER END
 $Descr A3 16535 11693
@@ -57,7 +54,7 @@ F 3 "" H 875 1400 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	875  2050 875  1400
+	875  2050 875  1875
 $Comp
 L power:GND #PWR0102
 U 1 1 5C612F06
@@ -74,10 +71,10 @@ Wire Wire Line
 Wire Wire Line
 	875  2250 875  2500
 $Comp
-L SamacSys_Parts:47309-3351 J1
+L SamacSys_Parts:47309-3351 SD1
 U 1 1 5C618E16
 P 2550 1725
-F 0 "J1" H 3200 1990 50  0000 C CNN
+F 0 "SD1" H 3200 1990 50  0000 C CNN
 F 1 "47309-3351" H 3200 1899 50  0000 C CNN
 F 2 "undo:Molex-MicroSD-473093351" H 3700 1825 50  0001 L CNN
 F 3 "https://componentsearchengine.com/Datasheets/1/47309-3351.pdf" H 3700 1725 50  0001 L CNN
@@ -263,10 +260,10 @@ VSPI_CLK
 Text GLabel 4050 9125 0    50   Input ~ 0
 VSPI_MOSI
 $Comp
-L Connector_Generic:Conn_02x08_Odd_Even J5
+L Connector_Generic:Conn_02x08_Odd_Even J1
 U 1 1 5D8B59AB
 P 4225 7600
-F 0 "J5" H 4275 8117 50  0000 C CNN
+F 0 "J1" H 4275 8117 50  0000 C CNN
 F 1 "Conn_02x08_Odd_Even" H 4275 8026 50  0000 C CNN
 F 2 "Connector_PinHeader_2.54mm:PinHeader_2x08_P2.54mm_Vertical" H 4225 7600 50  0001 C CNN
 F 3 "http://www.connfly.com/userfiles/image/UpLoadFile/File/2014/11/24/PC104-003.pdf" H 4225 7600 50  0001 C CNN
@@ -277,16 +274,14 @@ $EndComp
 $Comp
 L power:+3.3V #PWR0105
 U 1 1 5D8B5B52
-P 3325 7000
-F 0 "#PWR0105" H 3325 6850 50  0001 C CNN
-F 1 "+3.3V" H 3340 7173 50  0000 C CNN
-F 2 "" H 3325 7000 50  0001 C CNN
-F 3 "" H 3325 7000 50  0001 C CNN
-	1    3325 7000
+P 5100 7050
+F 0 "#PWR0105" H 5100 6900 50  0001 C CNN
+F 1 "+3.3V" H 5115 7223 50  0000 C CNN
+F 2 "" H 5100 7050 50  0001 C CNN
+F 3 "" H 5100 7050 50  0001 C CNN
+	1    5100 7050
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	3325 8000 4025 8000
 $Comp
 L power:GND #PWR0106
 U 1 1 5D8B5B9E
@@ -303,12 +298,12 @@ Wire Wire Line
 $Comp
 L power:+3.3V #PWR0107
 U 1 1 5D8B5BF6
-P 5075 8925
-F 0 "#PWR0107" H 5075 8775 50  0001 C CNN
-F 1 "+3.3V" H 5090 9098 50  0000 C CNN
-F 2 "" H 5075 8925 50  0001 C CNN
-F 3 "" H 5075 8925 50  0001 C CNN
-	1    5075 8925
+P 3325 8975
+F 0 "#PWR0107" H 3325 8825 50  0001 C CNN
+F 1 "+3.3V" H 3340 9148 50  0000 C CNN
+F 2 "" H 3325 8975 50  0001 C CNN
+F 3 "" H 3325 8975 50  0001 C CNN
+	1    3325 8975
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
@@ -327,13 +322,7 @@ F 3 "" H 3325 10450 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	4550 9825 5075 9825
-Wire Wire Line
-	5075 9825 5075 8925
-Wire Wire Line
 	5100 8375 5100 8000
-Wire Wire Line
-	3325 8000 3325 7000
 Text GLabel 4050 9325 0    50   Input ~ 0
 I2C_SDA
 Text GLabel 4550 9125 2    50   Input ~ 0
@@ -352,7 +341,7 @@ Text GLabel 4550 9625 2    50   Input ~ 0
 IO0
 Text GLabel 4050 9225 0    50   Input ~ 0
 IO1
-Text GLabel 4050 9725 0    50   Input ~ 0
+Text GLabel 4550 9725 2    50   Input ~ 0
 IO2
 Text GLabel 4550 9225 2    50   Input ~ 0
 IO3
@@ -378,7 +367,7 @@ Text GLabel 4525 7300 2    50   Input ~ 0
 I36
 Text GLabel 4025 7300 0    50   Input ~ 0
 I39
-Text GLabel 4525 7900 2    50   Input ~ 0
+Text GLabel 4025 8000 0    50   Input ~ 0
 EXT_5V
 Wire Notes Line
 	7225 6375 7225 11175
@@ -469,7 +458,7 @@ Text Notes 650  6550 0    100  ~ 0
 Connectors
 Text GLabel 4525 7800 2    50   Input ~ 0
 VBAT
-Text GLabel 4550 9725 2    50   Input ~ 0
+Text GLabel 4550 9825 2    50   Input ~ 0
 EN
 $Comp
 L undo:DizzyBITLogo U3
@@ -483,10 +472,10 @@ F 3 "" H 15500 10225 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Connector_Generic:Conn_02x08_Odd_Even J7
+L Connector_Generic:Conn_02x08_Odd_Even J2
 U 1 1 5D8FF691
 P 4250 9425
-F 0 "J7" H 4300 9942 50  0000 C CNN
+F 0 "J2" H 4300 9942 50  0000 C CNN
 F 1 "Conn_02x08_Odd_Even" H 4300 9851 50  0000 C CNN
 F 2 "Connector_PinHeader_2.54mm:PinHeader_2x08_P2.54mm_Vertical" H 4250 9425 50  0001 C CNN
 F 3 "http://www.connfly.com/userfiles/image/UpLoadFile/File/2014/11/24/PC104-003.pdf" H 4250 9425 50  0001 C CNN
@@ -535,10 +524,10 @@ F 3 "" H 13325 6325 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Connector_Generic:Conn_02x05_Odd_Even J3
+L Connector_Generic:Conn_02x05_Odd_Even JP2
 U 1 1 5D99A860
 P 2425 4025
-F 0 "J3" H 2475 4442 50  0000 C CNN
+F 0 "JP2" H 2475 4442 50  0000 C CNN
 F 1 "Conn_02x05_Odd_Even" H 2475 4351 50  0000 C CNN
 F 2 "DizzyBit:DizzyBit-SolderJumper-5-5-Open" H 2425 4025 50  0001 C CNN
 F 3 "~" H 2425 4025 50  0001 C CNN
@@ -782,10 +771,10 @@ Wire Wire Line
 Wire Wire Line
 	9550 1175 9550 1025
 $Comp
-L Jumper:SolderJumper_3_Bridged12 JP1
+L Jumper:SolderJumper_3_Bridged12 JP3
 U 1 1 5D7A4BED
 P 12875 1925
-F 0 "JP1" V 12829 1992 50  0000 L CNN
+F 0 "JP3" V 12829 1992 50  0000 L CNN
 F 1 "SolderJumper_3_Bridged12" V 12920 1992 50  0000 L CNN
 F 2 "DizzyBit:DizzyBit-SolderJumper-3-Open" H 12875 1925 50  0001 C CNN
 F 3 "~" H 12875 1925 50  0001 C CNN
@@ -1109,10 +1098,10 @@ Wire Wire Line
 Wire Wire Line
 	11450 10850 10700 10850
 $Comp
-L Connector_Generic:Conn_02x03_Odd_Even J4
+L Connector_Generic:Conn_02x03_Odd_Even JP5
 U 1 1 5DA1D4B1
 P 14150 6950
-F 0 "J4" H 14200 7267 50  0000 C CNN
+F 0 "JP5" H 14200 7267 50  0000 C CNN
 F 1 "Conn_02x03_Odd_Even" H 14200 7176 50  0000 C CNN
 F 2 "DizzyBit:DizzyBit-SolderJumper-3-3-Open" H 14150 6950 50  0001 C CNN
 F 3 "~" H 14150 6950 50  0001 C CNN
@@ -1176,10 +1165,10 @@ IO4
 Text GLabel 13775 3925 0    50   Input ~ 0
 IO5
 $Comp
-L Connector_Generic:Conn_02x04_Odd_Even J2
+L Connector_Generic:Conn_02x04_Odd_Even JP4
 U 1 1 5DA528D6
 P 13975 3725
-F 0 "J2" H 14025 4042 50  0000 C CNN
+F 0 "JP4" H 14025 4042 50  0000 C CNN
 F 1 "Conn_02x04_Odd_Even" H 14025 3951 50  0000 C CNN
 F 2 "DizzyBit:DizzyBit-SolderJumper-4-4-Open" H 13975 3725 50  0001 C CNN
 F 3 "~" H 13975 3725 50  0001 C CNN
@@ -1207,10 +1196,10 @@ F 5 "ESR03EZPJ103" H 13125 6925 50  0001 C CNN "pn"
 	0    1    1    0   
 $EndComp
 $Comp
-L power:+3.3V #PWR?
+L power:+3.3V #PWR0122
 U 1 1 5DA6192C
 P 13450 6725
-F 0 "#PWR?" H 13450 6575 50  0001 C CNN
+F 0 "#PWR0122" H 13450 6575 50  0001 C CNN
 F 1 "+3.3V" H 13465 6898 50  0000 C CNN
 F 2 "" H 13450 6725 50  0001 C CNN
 F 3 "" H 13450 6725 50  0001 C CNN
@@ -1221,4 +1210,25 @@ Wire Wire Line
 	13450 6725 13450 6925
 Wire Wire Line
 	13450 6925 13225 6925
+Wire Wire Line
+	5100 7050 5100 7900
+Wire Wire Line
+	5100 7900 4525 7900
+Wire Wire Line
+	3325 8975 3325 9725
+Wire Wire Line
+	3325 9725 4050 9725
+$Comp
+L Jumper:SolderJumper_2_Bridged JP1
+U 1 1 5D97861B
+P 875 1725
+F 0 "JP1" V 829 1793 50  0000 L CNN
+F 1 "SolderJumper_2_Bridged" V 920 1793 50  0000 L CNN
+F 2 "" H 875 1725 50  0001 C CNN
+F 3 "~" H 875 1725 50  0001 C CNN
+	1    875  1725
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	875  1400 875  1575
 $EndSCHEMATC
