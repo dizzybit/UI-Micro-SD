@@ -76,7 +76,7 @@ U 1 1 5C618E16
 P 2550 1725
 F 0 "SD1" H 3200 1990 50  0000 C CNN
 F 1 "47309-3351" H 3200 1899 50  0000 C CNN
-F 2 "undo:Molex-MicroSD-473093351" H 3700 1825 50  0001 L CNN
+F 2 "Connfly:DS-1139-04" H 3700 1825 50  0001 L CNN
 F 3 "https://componentsearchengine.com/Datasheets/1/47309-3351.pdf" H 3700 1725 50  0001 L CNN
 F 4 "WM10795DKR-ND" H 2550 1725 50  0001 C CNN "dk_pn"
 F 5 "47309-3351" H 2550 1725 50  0001 C CNN "pn"
@@ -583,8 +583,6 @@ Wire Wire Line
 Wire Wire Line
 	8425 4300 7875 4300
 Connection ~ 7875 4300
-Wire Wire Line
-	7875 4300 7875 4500
 $Comp
 L undo:SFV14R-2STE1HLF U1
 U 1 1 5D6D328C
@@ -596,16 +594,6 @@ F 3 "" H 8525 2850 50  0001 C CNN
 	1    8525 2850
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	8425 3000 7875 3000
-Wire Wire Line
-	7875 3000 7875 3200
-Connection ~ 7875 3200
-Wire Wire Line
-	8425 4500 7875 4500
-Connection ~ 7875 4500
-Wire Wire Line
-	7875 4500 7875 4950
 Text GLabel 8425 3300 0    50   Input ~ 0
 LCD_LEDK
 Text GLabel 8425 3600 0    50   Input ~ 0
@@ -1224,11 +1212,15 @@ U 1 1 5D97861B
 P 875 1725
 F 0 "JP1" V 829 1793 50  0000 L CNN
 F 1 "SolderJumper_2_Bridged" V 920 1793 50  0000 L CNN
-F 2 "" H 875 1725 50  0001 C CNN
+F 2 "DizzyBit:DizzyBit-SolderJumper-2-Open" H 875 1725 50  0001 C CNN
 F 3 "~" H 875 1725 50  0001 C CNN
 	1    875  1725
 	0    1    1    0   
 $EndComp
 Wire Wire Line
 	875  1400 875  1575
+NoConn ~ 8425 3000
+Wire Wire Line
+	7875 4300 7875 4950
+NoConn ~ 8425 4500
 $EndSCHEMATC
