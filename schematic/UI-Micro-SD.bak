@@ -76,7 +76,7 @@ U 1 1 5C618E16
 P 2550 1725
 F 0 "SD1" H 3200 1990 50  0000 C CNN
 F 1 "47309-3351" H 3200 1899 50  0000 C CNN
-F 2 "Connfly:DS-1139-04" H 3700 1825 50  0001 L CNN
+F 2 "Connfly:DS1139-05" H 3700 1825 50  0001 L CNN
 F 3 "https://componentsearchengine.com/Datasheets/1/47309-3351.pdf" H 3700 1725 50  0001 L CNN
 F 4 "WM10795DKR-ND" H 2550 1725 50  0001 C CNN "dk_pn"
 F 5 "47309-3351" H 2550 1725 50  0001 C CNN "pn"
@@ -583,8 +583,6 @@ Wire Wire Line
 Wire Wire Line
 	8425 4300 7875 4300
 Connection ~ 7875 4300
-Wire Wire Line
-	7875 4300 7875 4500
 $Comp
 L undo:SFV14R-2STE1HLF U1
 U 1 1 5D6D328C
@@ -596,16 +594,6 @@ F 3 "" H 8525 2850 50  0001 C CNN
 	1    8525 2850
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	8425 3000 7875 3000
-Wire Wire Line
-	7875 3000 7875 3200
-Connection ~ 7875 3200
-Wire Wire Line
-	8425 4500 7875 4500
-Connection ~ 7875 4500
-Wire Wire Line
-	7875 4500 7875 4950
 Text GLabel 8425 3300 0    50   Input ~ 0
 LCD_LEDK
 Text GLabel 8425 3600 0    50   Input ~ 0
@@ -1115,11 +1103,11 @@ Wire Wire Line
 Connection ~ 14450 6950
 Wire Wire Line
 	14450 6950 14450 7050
-Text GLabel 13950 6850 0    50   Input ~ 0
+Text GLabel 13950 7050 0    50   Input ~ 0
 I34
 Text GLabel 13950 6950 0    50   Input ~ 0
 I36
-Text GLabel 13950 7050 0    50   Input ~ 0
+Text GLabel 13950 6850 0    50   Input ~ 0
 I39
 $Comp
 L power:GND #PWR0120
@@ -1231,4 +1219,8 @@ F 3 "~" H 875 1725 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	875  1400 875  1575
+NoConn ~ 8425 3000
+Wire Wire Line
+	7875 4300 7875 4950
+NoConn ~ 8425 4500
 $EndSCHEMATC

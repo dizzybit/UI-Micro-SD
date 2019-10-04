@@ -76,7 +76,7 @@ U 1 1 5C618E16
 P 2550 1725
 F 0 "SD1" H 3200 1990 50  0000 C CNN
 F 1 "47309-3351" H 3200 1899 50  0000 C CNN
-F 2 "Connfly:DS-1139-04" H 3700 1825 50  0001 L CNN
+F 2 "Connfly:DS1139-05" H 3700 1825 50  0001 L CNN
 F 3 "https://componentsearchengine.com/Datasheets/1/47309-3351.pdf" H 3700 1725 50  0001 L CNN
 F 4 "WM10795DKR-ND" H 2550 1725 50  0001 C CNN "dk_pn"
 F 5 "47309-3351" H 2550 1725 50  0001 C CNN "pn"
@@ -856,7 +856,7 @@ F 3 "" H 8975 8950 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	8975 8950 8975 8800
-Text GLabel 10050 10525 0    50   Input ~ 0
+Text GLabel 10700 10425 0    50   Input ~ 0
 A0
 $Comp
 L power:+3.3V #PWR0118
@@ -871,7 +871,7 @@ F 3 "" H 10700 10075 50  0001 C CNN
 $EndComp
 Text GLabel 10700 10525 0    50   Input ~ 0
 A1
-Text GLabel 11450 10525 2    50   Input ~ 0
+Text GLabel 10700 10625 0    50   Input ~ 0
 A2
 Text Notes 7525 9800 0    50   ~ 0
 A2
@@ -1056,13 +1056,6 @@ Wire Wire Line
 	10050 10425 10050 10075
 Wire Wire Line
 	10050 10075 10700 10075
-Wire Wire Line
-	10700 10425 10700 10075
-Connection ~ 10700 10075
-Wire Wire Line
-	10700 10075 11450 10075
-Wire Wire Line
-	11450 10075 11450 10425
 $Comp
 L power:GND #PWR0119
 U 1 1 5DA091EF
@@ -1074,13 +1067,6 @@ F 3 "" H 10700 10850 50  0001 C CNN
 	1    10700 10850
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	10050 10625 10050 10850
-Wire Wire Line
-	10050 10850 10700 10850
-Wire Wire Line
-	10700 10625 10700 10850
-Connection ~ 10700 10850
 Wire Wire Line
 	11450 10625 11450 10850
 Wire Wire Line
@@ -1103,11 +1089,11 @@ Wire Wire Line
 Connection ~ 14450 6950
 Wire Wire Line
 	14450 6950 14450 7050
-Text GLabel 13950 6850 0    50   Input ~ 0
+Text GLabel 13950 7050 0    50   Input ~ 0
 I34
 Text GLabel 13950 6950 0    50   Input ~ 0
 I36
-Text GLabel 13950 7050 0    50   Input ~ 0
+Text GLabel 13950 6850 0    50   Input ~ 0
 I39
 $Comp
 L power:GND #PWR0120
@@ -1223,4 +1209,16 @@ NoConn ~ 8425 3000
 Wire Wire Line
 	7875 4300 7875 4950
 NoConn ~ 8425 4500
+Wire Wire Line
+	11450 10425 11450 10525
+Connection ~ 11450 10625
+Connection ~ 11450 10525
+Wire Wire Line
+	11450 10525 11450 10625
+Wire Wire Line
+	10050 10425 10050 10525
+Connection ~ 10050 10425
+Connection ~ 10050 10525
+Wire Wire Line
+	10050 10525 10050 10625
 $EndSCHEMATC
