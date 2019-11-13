@@ -17,59 +17,37 @@ $EndDescr
 $Comp
 L _semi:LED DS1
 U 1 1 5C6120FB
-P 875 2150
-F 0 "DS1" H 1025 2196 50  0000 L CNN
-F 1 "LED-BLUE" H 1025 2105 50  0000 L CNN
-F 2 "LED_SMD:LED_0805_2012Metric" H 1025 2104 60  0001 L CNN
-F 3 "" H 875 2150 60  0001 C CNN
-F 4 "160-1579-1-ND" H 1025 2006 50  0001 L CNN "dk_pn"
-F 5 "LTST-C170TBKT" H 875 2150 50  0001 C CNN "pn"
-F 6 "https://www.digikey.com/product-detail/en/lite-on-inc/LTST-C170TBKT/160-1579-1-ND/564889" H 875 2150 50  0001 C CNN "dk_web"
-	1    875  2150
+P 5350 4150
+F 0 "DS1" H 5500 4196 50  0000 L CNN
+F 1 "LED-BLUE" H 5500 4105 50  0000 L CNN
+F 2 "LED_SMD:LED_0805_2012Metric" H 5500 4104 60  0001 L CNN
+F 3 "" H 5350 4150 60  0001 C CNN
+F 4 "160-1579-1-ND" H 5500 4006 50  0001 L CNN "dk_pn"
+F 5 "LTST-C170TBKT" H 5350 4150 50  0001 C CNN "pn"
+F 6 "https://www.digikey.com/product-detail/en/lite-on-inc/LTST-C170TBKT/160-1579-1-ND/564889" H 5350 4150 50  0001 C CNN "dk_web"
+	1    5350 4150
 	1    0    0    -1  
 $EndComp
 $Comp
 L _passive:R R4
 U 1 1 5C61218D
-P 875 2600
-F 0 "R4" H 938 2646 50  0000 L CNN
-F 1 "R330" H 938 2555 50  0000 L CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" H 875 2650 60  0001 C CNN
-F 3 "" H 875 2650 60  0001 C CNN
-F 4 "CR0603-JW-331ELFCT-ND" H 875 2600 50  0001 C CNN "dk_pn"
-F 5 "CR0603-JW-331ELF" H 875 2600 50  0001 C CNN "pn"
-F 6 "https://www.digikey.com/product-detail/en/bourns-inc/CR0603-JW-331ELF/CR0603-JW-331ELFCT-ND/3767680" H 875 2600 50  0001 C CNN "dk_web"
-	1    875  2600
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:+3.3V #PWR0101
-U 1 1 5C6121E5
-P 875 1400
-F 0 "#PWR0101" H 875 1250 50  0001 C CNN
-F 1 "+3.3V" H 890 1573 50  0000 C CNN
-F 2 "" H 875 1400 50  0001 C CNN
-F 3 "" H 875 1400 50  0001 C CNN
-	1    875  1400
+P 5350 4600
+F 0 "R4" H 5413 4646 50  0000 L CNN
+F 1 "R330" H 5413 4555 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 5350 4650 60  0001 C CNN
+F 3 "" H 5350 4650 60  0001 C CNN
+F 4 "CR0603-JW-331ELFCT-ND" H 5350 4600 50  0001 C CNN "dk_pn"
+F 5 "CR0603-JW-331ELF" H 5350 4600 50  0001 C CNN "pn"
+F 6 "https://www.digikey.com/product-detail/en/bourns-inc/CR0603-JW-331ELF/CR0603-JW-331ELFCT-ND/3767680" H 5350 4600 50  0001 C CNN "dk_web"
+	1    5350 4600
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	875  2050 875  1875
-$Comp
-L power:GND #PWR0102
-U 1 1 5C612F06
-P 875 3275
-F 0 "#PWR0102" H 875 3025 50  0001 C CNN
-F 1 "GND" H 880 3102 50  0000 C CNN
-F 2 "" H 875 3275 50  0001 C CNN
-F 3 "" H 875 3275 50  0001 C CNN
-	1    875  3275
-	1    0    0    -1  
-$EndComp
+	5350 4050 5350 3875
 Wire Wire Line
-	875  2700 875  3275
+	5350 4700 5350 5275
 Wire Wire Line
-	875  2250 875  2500
+	5350 4250 5350 4500
 $Comp
 L SamacSys_Parts:47309-3351 SD1
 U 1 1 5C618E16
@@ -78,13 +56,9 @@ F 0 "SD1" H 3200 1990 50  0000 C CNN
 F 1 "47309-3351" H 3200 1899 50  0000 C CNN
 F 2 "Connfly:DS1139-05" H 3700 1825 50  0001 L CNN
 F 3 "https://componentsearchengine.com/Datasheets/1/47309-3351.pdf" H 3700 1725 50  0001 L CNN
-F 4 "WM10795DKR-ND" H 2550 1725 50  0001 C CNN "dk_pn"
-F 5 "47309-3351" H 2550 1725 50  0001 C CNN "pn"
-F 6 "Molex 47309 Series 8 Way Right Angle Micro SD Memory Card Connector with Solder Termination" H 3700 1625 50  0001 L CNN "Description"
-F 7 "3.35" H 3700 1525 50  0001 L CNN "Height"
-F 8 "538-47309-3351" H 3700 1425 50  0001 L CNN "Mouser Part Number"
-F 9 "Molex" H 3700 1325 50  0001 L CNN "Manufacturer_Name"
-F 10 "47309-3351" H 3700 1225 50  0001 L CNN "Manufacturer_Part_Number"
+F 4 "DS1139-05" H 2550 1725 50  0001 C CNN "pn"
+F 5 "Connfly" H 3700 1325 50  0001 L CNN "Manufacturer_Name"
+F 6 "DS1139-05" H 3700 1225 50  0001 L CNN "Manufacturer_Part_Number"
 	1    2550 1725
 	1    0    0    -1  
 $EndComp
@@ -588,16 +562,14 @@ L undo:SFV14R-2STE1HLF U1
 U 1 1 5D6D328C
 P 8525 2850
 F 0 "U1" H 9152 1921 50  0000 L CNN
-F 1 "SFV14R-2STE1HLF" H 9152 1830 50  0000 L CNN
-F 2 "undo:SFV14R-2STE1HLF" H 8525 2850 50  0001 C CNN
+F 1 "SFV14R-3STBE1HLF" H 9152 1830 50  0000 L CNN
+F 2 "undo:SFV14R-3STBE1HLF" H 8525 2850 50  0001 C CNN
 F 3 "" H 8525 2850 50  0001 C CNN
 	1    8525 2850
 	1    0    0    -1  
 $EndComp
 Text GLabel 8425 3300 0    50   Input ~ 0
 LCD_LEDK
-Text GLabel 8425 3600 0    50   Input ~ 0
-LCD_RESET
 $Comp
 L OLIMEX_Power:+3.3V #PWR0110
 U 1 1 5D6D3407
@@ -625,7 +597,7 @@ Wire Wire Line
 	8425 3400 7725 3400
 Connection ~ 7725 3400
 Wire Wire Line
-	7725 3400 7725 4000
+	7725 3400 7725 3600
 $Comp
 L dk_Transistors-FETs-MOSFETs-Single:BSS138 Q1
 U 1 1 5D6D384F
@@ -666,9 +638,10 @@ L _passive:R R5
 U 1 1 5D6D3A80
 P 12275 4925
 F 0 "R5" V 11969 4925 50  0000 C CNN
-F 1 "R" V 12060 4925 50  0000 C CNN
+F 1 "4R7 Ohm" V 12060 4925 50  0000 C CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" V 12159 4925 60  0001 C CNN
 F 3 "" H 12275 4975 60  0000 C CNN
+F 4 "RC0603JR-074R7L " H 12275 4925 50  0001 C CNN "pn"
 	1    12275 4925
 	0    1    1    0   
 $EndComp
@@ -683,10 +656,10 @@ L _passive:R R6
 U 1 1 5D6D3DAF
 P 11050 5025
 F 0 "R6" H 10987 4926 50  0000 R CNN
-F 1 "R" H 10987 5017 50  0000 R CNN
+F 1 "R10K" H 10987 5017 50  0000 R CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" H 10987 5116 60  0001 R CNN
 F 3 "" H 11050 5075 60  0000 C CNN
-F 4 "ESR03EZPJ103" H 11050 5025 50  0001 C CNN "pn"
+F 4 "ESR03EZPJ103 " H 11050 5025 50  0001 C CNN "pn"
 	1    11050 5025
 	-1   0    0    1   
 $EndComp
@@ -797,24 +770,6 @@ LCD_BACKLIGHT
 Text Notes 7300 775  0    100  ~ 0
 1.77" SPI LCD
 $Comp
-L SamacSys_Parts:TCA9534PWR IC1
-U 1 1 5C5946A2
-P 8975 8100
-F 0 "IC1" H 9525 8365 50  0000 C CNN
-F 1 "TCA9534PWR" H 9525 8274 50  0000 C CNN
-F 2 "undo:SOP65P640X120-16N" H 9925 8200 50  0001 L CNN
-F 3 "http://www.ti.com/lit/ds/symlink/tca9534.pdf" H 9925 8100 50  0001 L CNN
-F 4 "296-40574-1-ND" H 8975 8100 50  0001 C CNN "dk_pn"
-F 5 "TCA9534PWR" H 8975 8100 50  0001 C CNN "pn"
-F 6 "Remote 8-Bit I2C Low-Power I/O Expander With Interrupt Output and Configuration Registers" H 9925 8000 50  0001 L CNN "Description"
-F 7 "1.2" H 9925 7900 50  0001 L CNN "Height"
-F 8 "595-TCA9534PWR" H 9925 7800 50  0001 L CNN "Mouser Part Number"
-F 9 "Texas Instruments" H 9925 7700 50  0001 L CNN "Manufacturer_Name"
-F 10 "TCA9534PWR" H 9925 7600 50  0001 L CNN "Manufacturer_Part_Number"
-	1    8975 8100
-	1    0    0    -1  
-$EndComp
-$Comp
 L power:+3.3V #PWR0116
 U 1 1 5C5947EC
 P 10400 7950
@@ -856,7 +811,7 @@ F 3 "" H 8975 8950 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	8975 8950 8975 8800
-Text GLabel 10050 10525 0    50   Input ~ 0
+Text GLabel 10700 10425 0    50   Input ~ 0
 A0
 $Comp
 L power:+3.3V #PWR0118
@@ -871,7 +826,7 @@ F 3 "" H 10700 10075 50  0001 C CNN
 $EndComp
 Text GLabel 10700 10525 0    50   Input ~ 0
 A1
-Text GLabel 11450 10525 2    50   Input ~ 0
+Text GLabel 10700 10625 0    50   Input ~ 0
 A2
 Text Notes 7525 9800 0    50   ~ 0
 A2
@@ -1056,13 +1011,6 @@ Wire Wire Line
 	10050 10425 10050 10075
 Wire Wire Line
 	10050 10075 10700 10075
-Wire Wire Line
-	10700 10425 10700 10075
-Connection ~ 10700 10075
-Wire Wire Line
-	10700 10075 11450 10075
-Wire Wire Line
-	11450 10075 11450 10425
 $Comp
 L power:GND #PWR0119
 U 1 1 5DA091EF
@@ -1074,13 +1022,6 @@ F 3 "" H 10700 10850 50  0001 C CNN
 	1    10700 10850
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	10050 10625 10050 10850
-Wire Wire Line
-	10050 10850 10700 10850
-Wire Wire Line
-	10700 10625 10700 10850
-Connection ~ 10700 10850
 Wire Wire Line
 	11450 10625 11450 10850
 Wire Wire Line
@@ -1209,18 +1150,56 @@ Wire Wire Line
 $Comp
 L Jumper:SolderJumper_2_Bridged JP1
 U 1 1 5D97861B
-P 875 1725
-F 0 "JP1" V 829 1793 50  0000 L CNN
-F 1 "SolderJumper_2_Bridged" V 920 1793 50  0000 L CNN
-F 2 "DizzyBit:DizzyBit-SolderJumper-2-Open" H 875 1725 50  0001 C CNN
-F 3 "~" H 875 1725 50  0001 C CNN
-	1    875  1725
+P 5350 3725
+F 0 "JP1" V 5304 3793 50  0000 L CNN
+F 1 "SolderJumper_2_Bridged" V 5395 3793 50  0000 L CNN
+F 2 "DizzyBit:DizzyBit-SolderJumper-2-Open" H 5350 3725 50  0001 C CNN
+F 3 "~" H 5350 3725 50  0001 C CNN
+	1    5350 3725
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	875  1400 875  1575
+	5350 3400 5350 3575
 NoConn ~ 8425 3000
 Wire Wire Line
 	7875 4300 7875 4950
 NoConn ~ 8425 4500
+Wire Wire Line
+	11450 10425 11450 10525
+Connection ~ 11450 10625
+Connection ~ 11450 10525
+Wire Wire Line
+	11450 10525 11450 10625
+Wire Wire Line
+	10050 10425 10050 10525
+Connection ~ 10050 10425
+Connection ~ 10050 10525
+Wire Wire Line
+	10050 10525 10050 10625
+Wire Wire Line
+	8425 3600 7725 3600
+Connection ~ 7725 3600
+Wire Wire Line
+	7725 3600 7725 4000
+Text GLabel 5350 3400 0    50   Input ~ 0
+HSPI_CLK
+Text GLabel 5350 5275 2    50   Input ~ 0
+HSPI_CS
+$Comp
+L SamacSys_Parts:TCA9554APWR IC1
+U 1 1 5DBD5E3F
+P 8975 8100
+F 0 "IC1" H 9525 8365 50  0000 C CNN
+F 1 "TCA9554APWR" H 9525 8274 50  0000 C CNN
+F 2 "SOP65P640X120-16N" H 9925 8200 50  0001 L CNN
+F 3 "http://www.ti.com/lit/gpn/tca9554a" H 9925 8100 50  0001 L CNN
+F 4 "Texas Instruments TCA9554APWR, 8-channel 8bit I/O Expander 400kHz, I2C, SMBus, 16-Pin TSSOP" H 9925 8000 50  0001 L CNN "Description"
+F 5 "" H 9925 7900 50  0001 L CNN "Height"
+F 6 "595-TCA9554APWR" H 9925 7800 50  0001 L CNN "Mouser Part Number"
+F 7 "https://www.mouser.com/Search/ProductDetail.aspx?qs=O1HRStiETCjcEMAC%252bg%252bJsA%3d%3d" H 9925 7700 50  0001 L CNN "Mouser Price/Stock"
+F 8 "Texas Instruments" H 9925 7600 50  0001 L CNN "Manufacturer_Name"
+F 9 "TCA9554APWR" H 9925 7500 50  0001 L CNN "Manufacturer_Part_Number"
+	1    8975 8100
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
